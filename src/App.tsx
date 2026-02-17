@@ -5,7 +5,7 @@ import ResultsPanel from './components/ResultsPanel'
 import Header from './components/Header'
 import './App.css'
 
-const N8N_WEBHOOK_URL = 'http://localhost:5678/webhook-test/seo-meta'
+const N8N_WEBHOOK_URL = import.meta.env.VITE_N8N_WEBHOOK_URL
 
 function App() {
   const [loading, setLoading] = useState(false)
